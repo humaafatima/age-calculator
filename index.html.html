@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Age Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc">
+    <h1>Age Calculator</h1>
+    <p class="sub">Enter your date of birth to see your exact age.</p>
+
+    <label for="dob">Date of birth</label>
+    <input type="date" id="dob">
+    <button id="calcBtn" type="button">Calculate age</button>
+    <p class="error" id="error" role="alert"></p>
+
+    <section class="result" id="result" aria-live="polite">
+      <div class="big">
+        <div><strong id="years">0</strong><span>years</span></div>
+        <div><strong id="months">0</strong><span>months</span></div>
+        <div><strong id="days">0</strong><span>days</span></div>
+      </div>
+      <ul class="extra">
+        <li>Total days lived <b id="totalDays">0</b></li>
+        <li>Next birthday in <b id="nextBday">0</b></li>
+      </ul>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
